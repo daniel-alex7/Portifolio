@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">Daniel Silva</div>
+        <nav>
+            <a href="index.html" style="color: var(--accent-color);">Home</a>
+            <a href="habilidades.html">Habilidades</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="contatos.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+    <!-- Resumo e Videos -->
+    <section class="content" id="resumo">
+        <div class="hero-text">
+            <h1>Desenvolvedor Back-end<br></h1>
+            <p class="typing-effect">Transformando dados e lógica em soluções escaláveis.</p>
+            <br>
+            <a href="projetos.html"><button class="btn-modern">Ver Projetos</button></a>
+            <a href="https://github.com/daniel-alex7" target="_blank"><button class="btn-outline">Acessar GitHub</button></a>
+        </div>
+    </section>
+
+    <!-- Mini Game Section -->
+    <section id="game-section" class="content" style="padding-top: 0;">
+        <h2 class="section-title" style="font-size: 1.5rem; margin-bottom: 30px;">Desafio da Memória Tech 🧠</h2>
+        <p style="margin-bottom: 20px; color: var(--text-secondary);">Encontre os pares de tecnologias para desbloquear sua mente!</p>
+        
+        <div id="memory-game" class="memory-game">
+            <!-- Cartas geradas via JavaScript -->
+        </div>
+
+        <div id="victory-message" class="victory-message">
+            <h3 style="color: var(--accent-color); font-size: 1.8rem; margin-bottom: 10px;">🎉 Sistema Desbloqueado!</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 20px;">Sua memória é tão eficiente quanto um banco de dados indexado.</p>
+            <button class="btn-modern" onclick="location.reload()">Jogar Novamente</button>
+        </div>
+    </section>
+
+    <!-- Seção Minha História -->
+    <section id="about" style="padding: 0 20px 60px 20px; max-width: 1000px; margin: 0 auto;">
+        <h2 class="section-title">Minha Jornada</h2>
+        
+        <div class="story-container">
+            <div class="story-chapter">
+                <h3 style="color: var(--accent-color); margin-bottom: 10px;">🌱 O Início & Propósito</h3>
+                <p style="color: var(--text-secondary);">Minha história é marcada por decisão. Desde cedo, entendi que precisava construir um futuro sólido para mim e para quem amo. O estudo sempre foi meu caminho para mudar de realidade.</p>
+            </div>
+
+            <div class="story-chapter">
+                <h3 style="color: var(--accent-color); margin-bottom: 10px;">🚀 A Descoberta da Tecnologia</h3>
+                <p style="color: var(--text-secondary);">Comecei em Análise e Desenvolvimento de Sistemas, onde a lógica de programação me fascinou. Percebi que não queria apenas usar sistemas, mas entender o "motor" por trás deles: dados, infraestrutura e servidores.</p>
+            </div>
+
+            <div class="story-chapter">
+                <h3 style="color: var(--accent-color); margin-bottom: 10px;">📚 Aprofundando Raízes</h3>
+                <p style="color: var(--text-secondary);">Migrei para Ciência da Computação em busca de profundidade. Enfrentei burocracias e desafios que, longe de me pararem, fortaleceram minha resiliência e maturidade.</p>
+            </div>
+
+            <div class="story-chapter">
+                <h3 style="color: var(--accent-color); margin-bottom: 10px;">⚡ Disciplina & Rotina</h3>
+                <p style="color: var(--text-secondary);">Conciliando trabalho e faculdade, aprendi na prática o valor da constância. O crescimento real acontece no esforço diário, mesmo nos dias difíceis.</p>
+            </div>
+
+            <div class="story-chapter">
+                <h3 style="color: var(--accent-color); margin-bottom: 10px;">🎯 Visão de Futuro</h3>
+                <p style="color: var(--text-secondary);">Meu foco está em Back-end, Cloud e Dados. Mais do que uma carreira, construo estabilidade para realizar sonhos pessoais, como formar minha família até 2027.</p>
+            </div>
+
+            <div class="story-chapter">
+                <h3 style="color: var(--accent-color); margin-bottom: 10px;">⚓ Meus Pilares</h3>
+                <p style="color: var(--text-secondary);">Minha fé é minha base. Ela me traz equilíbrio e reforça valores inegociáveis: ética, responsabilidade e respeito. Sigo convicto de que cada passo faz parte de algo maior.</p>
+            </div>
+        </div>
+    </section>
+
+  </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">Daniel Silva</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="habilidades.html">Habilidades</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="contatos.html" style="color: var(--accent-color);">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <h1 style="margin-bottom: 20px;">Vamos Conversar?</h1>
+            <p style="margin-bottom: 50px; color: var(--text-secondary); max-width: 600px;">
+                Estou sempre aberto a discutir novos projetos, ideias criativas ou oportunidades para fazer parte de suas visões.
+            </p>
+            
+            <div class="contact-container">
+                <!-- Informações de Contato -->
+                <div class="card">
+                    <h3>Entre em Contato</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px; font-size: 0.95rem;">
+                        Prefere enviar um email diretamente? Fique à vontade.
+                    </p>
+                    <ul class="skill-list" style="margin-top: 0;">
+                        <li style="margin-bottom: 15px;">
+                            <strong>Email:</strong> daniel456alexandre@gmail.com
+                        </li>
+                        <li style="margin-bottom: 15px;">
+                            <strong>Localização:</strong> Brasil
+                        </li>
+                        <li style="margin-bottom: 15px;">
+                            <strong>Área:</strong> Back-end & Cloud
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Formulário de Contato -->
+                <div class="card">
+                    <h3>Envie uma Mensagem</h3>
+                    <form class="contact-form" action="mailto:daniel456alexandre@gmail.com" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" placeholder="Seu Nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Sua mensagem..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-modern" style="width: 100%;">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

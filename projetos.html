@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">Daniel Silva</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="habilidades.html">Habilidades</a>
+            <a href="projetos.html" style="color: var(--accent-color);">Projetos</a>
+            <a href="contatos.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="projects">
+            <h2 class="section-title">Meus Projetos</h2>
+            
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="backend">Back-end</button>
+                <button class="filter-btn" data-filter="cloud">Cloud</button>
+                <button class="filter-btn" data-filter="data">Dados</button>
+            </div>
+
+            <div class="cards">  
+                <div class="card project-card" data-category="backend">
+                    <div class="card-image"></div>
+                    <h3>SaaS Financeiro Cristão</h3>
+                    <p>Plataforma web completa para gestão financeira pessoal. Permite controle de dízimos, planejamento de metas de longo prazo e relatórios de gastos, com foco em usabilidade para o público jovem.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                    <button class="btn-modern">Ver Detalhes</button>
+                </div>
+                <div class="card project-card" data-category="cloud">
+                    <div class="card-image"></div>
+                    <h3>Arquitetura Serverless AWS</h3>
+                    <p>Sistema de processamento assíncrono de dados. Utiliza filas para garantir alta disponibilidade e funções Lambda para processamento sob demanda, reduzindo custos de infraestrutura.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">AWS Lambda</span>
+                        <span class="tech-tag">Amazon SQS</span>
+                        <span class="tech-tag">DynamoDB</span>
+                        <span class="tech-tag">CloudWatch</span>
+                    </div>
+                    <button class="btn-modern">Ver Código</button>
+                </div>
+                <div class="card project-card" data-category="data">
+                    <div class="card-image"></div>
+                    <h3>Dashboard de Observabilidade</h3>
+                    <p>Painel centralizado para monitoramento de métricas de sistema e negócios. Integração de dados brutos transformados em insights visuais para tomada de decisão.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Power BI</span>
+                        <span class="tech-tag">Python (Pandas)</span>
+                        <span class="tech-tag">Grafana</span>
+                        <span class="tech-tag">SQL</span>
+                    </div>
+                    <button class="btn-modern">Acessar</button>
+                </div>
+
+                <!-- Novos Projetos -->
+                <div class="card project-card" data-category="backend">
+                    <div class="card-image"></div>
+                    <h3>API RESTful E-commerce</h3>
+                    <p>API robusta para gerenciamento de produtos, pedidos e usuários. Implementação de autenticação JWT e documentação Swagger.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                    <button class="btn-modern">Ver Código</button>
+                </div>
+
+                <div class="card project-card" data-category="data">
+                    <div class="card-image"></div>
+                    <h3>Pipeline ETL de Vendas</h3>
+                    <p>Automação de extração e transformação de dados de vendas diárias para alimentar data warehouse.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Airflow</span>
+                        <span class="tech-tag">SQL</span>
+                    </div>
+                    <button class="btn-modern">Ver Detalhes</button>
+                </div>
+
+                <div class="card project-card" data-category="cloud">
+                    <div class="card-image"></div>
+                    <h3>Infraestrutura como Código</h3>
+                    <p>Provisionamento automatizado de ambiente de produção na AWS utilizando Terraform.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Terraform</span>
+                        <span class="tech-tag">AWS EC2</span>
+                        <span class="tech-tag">VPC</span>
+                    </div>
+                    <button class="btn-modern">Ver Repo</button>
+                </div>
+            </div> 
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
