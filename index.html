@@ -17,7 +17,7 @@
             <a href="index.html" style="color: var(--accent-color);">Home</a>
             <a href="habilidades.html">Habilidades</a>
             <a href="projetos.html">Projetos</a>
-            <a href="contatos.html">Contato</a>
+            <a href="#contato">Contato</a>
         </nav>
     </header>
 
@@ -84,6 +84,19 @@
                 <p style="color: var(--text-secondary);">Minha fé é minha base. Ela me traz equilíbrio e reforça valores inegociáveis: ética, responsabilidade e respeito. Sigo convicto de que cada passo faz parte de algo maior.</p>
             </div>
         </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato" class="content" style="padding-bottom: 60px;">
+        <h2 class="section-title">Entre em Contato</h2>
+        <p style="text-align: center; color: var(--text-secondary); margin-bottom: 30px;">Tem uma proposta ou quer trocar uma ideia? Envie uma mensagem!</p>
+        
+        <form action="https://formspree.io/f/SEU_CODIGO_FORMSPREE_AQUI" method="POST" style="max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px;">
+            <input type="text" name="name" placeholder="Seu Nome" required style="padding: 15px; border-radius: 8px; border: 1px solid #333; background-color: #1a1a1a; color: #fff; font-family: inherit;">
+            <input type="email" name="email" placeholder="Seu E-mail" required style="padding: 15px; border-radius: 8px; border: 1px solid #333; background-color: #1a1a1a; color: #fff; font-family: inherit;">
+            <textarea name="message" placeholder="Sua Mensagem" rows="5" required style="padding: 15px; border-radius: 8px; border: 1px solid #333; background-color: #1a1a1a; color: #fff; font-family: inherit; resize: vertical;"></textarea>
+            <button type="submit" class="btn-modern" style="width: 100%; cursor: pointer;">Enviar Mensagem</button>
+        </form>
     </section>
 
   </main>
