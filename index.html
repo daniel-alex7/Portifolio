@@ -15,37 +15,61 @@
         <div class="logo">Daniel Silva</div>
         <nav>
             <a href="index.html" style="color: var(--accent-color);">Home</a>
-            <a href="habilidades.html">Habilidades</a>
-            <a href="projetos.html">Projetos</a>
-            <a href="#contato">Contato</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#projetos">Projetos</a>
+            <a href="contato.html">Contato</a>
         </nav>
     </header>
 
     <main>
     <!-- Resumo e Videos -->
-    <section class="content" id="resumo">
-        <div class="hero-text">
+    <section class="content hero-section" id="resumo">
+        <div class="hero-content">
             <h1>Desenvolvedor Back-end<br></h1>
             <p class="typing-effect">Transformando dados e lógica em soluções escaláveis.</p>
-            <br>
-            <a href="projetos.html"><button class="btn-modern">Ver Projetos</button></a>
-            <a href="https://github.com/daniel-alex7" target="_blank"><button class="btn-outline">Acessar GitHub</button></a>
+            <div class="hero-buttons">
+                <a href="#projetos"><button class="btn-modern">Ver Projetos</button></a>
+                <a href="https://github.com/daniel-alex7" target="_blank"><button class="btn-outline">Acessar GitHub</button></a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="img/Captura de tela 2025-12-23 114228.png" alt="Foto de Daniel Silva">
         </div>
     </section>
 
-    <!-- Mini Game Section -->
-    <section id="game-section" class="content" style="padding-top: 0;">
-        <h2 class="section-title" style="font-size: 1.5rem; margin-bottom: 30px;">Desafio da Memória Tech 🧠</h2>
-        <p style="margin-bottom: 20px; color: var(--text-secondary);">Encontre os pares de tecnologias para desbloquear sua mente!</p>
-        
-        <div id="memory-game" class="memory-game">
-            <!-- Cartas geradas via JavaScript -->
+    <!-- Seção Habilidades -->
+    <section id="habilidades" class="content">
+        <h2 class="section-title">Habilidades Técnicas</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; text-align: center;">
+            <div style="background: #1a1a1a; padding: 20px; border-radius: 10px; border: 1px solid #333;">
+                <h3 style="color: var(--accent-color); margin-bottom: 10px;">Back-end</h3>
+                <p style="color: var(--text-secondary);">Java, Spring Boot, Node.js, API RESTful</p>
+            </div>
+            <div style="background: #1a1a1a; padding: 20px; border-radius: 10px; border: 1px solid #333;">
+                <h3 style="color: var(--accent-color); margin-bottom: 10px;">Dados</h3>
+                <p style="color: var(--text-secondary);">SQL (PostgreSQL, MySQL), NoSQL (MongoDB)</p>
+            </div>
+            <div style="background: #1a1a1a; padding: 20px; border-radius: 10px; border: 1px solid #333;">
+                <h3 style="color: var(--accent-color); margin-bottom: 10px;">DevOps & Tools</h3>
+                <p style="color: var(--text-secondary);">Docker, Git, AWS, Linux</p>
+            </div>
         </div>
+    </section>
 
-        <div id="victory-message" class="victory-message">
-            <h3 style="color: var(--accent-color); font-size: 1.8rem; margin-bottom: 10px;">🎉 Sistema Desbloqueado!</h3>
-            <p style="color: var(--text-secondary); margin-bottom: 20px;">Sua memória é tão eficiente quanto um banco de dados indexado.</p>
-            <button class="btn-modern" onclick="location.reload()">Jogar Novamente</button>
+    <!-- Seção Projetos -->
+    <section id="projetos" class="content">
+        <h2 class="section-title">Meus Projetos</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+            <div style="background: #1a1a1a; padding: 25px; border-radius: 15px; border: 1px solid #333;">
+                <h3 style="color: #fff; margin-bottom: 10px;">API de Gestão</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 20px;">Sistema backend robusto com autenticação JWT, documentação Swagger e testes automatizados.</p>
+                <button class="btn-modern" style="font-size: 0.9rem; padding: 10px 20px;">Ver no GitHub</button>
+            </div>
+            <div style="background: #1a1a1a; padding: 25px; border-radius: 15px; border: 1px solid #333;">
+                <h3 style="color: #fff; margin-bottom: 10px;">Microsserviços E-commerce</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 20px;">Arquitetura escalável utilizando Spring Cloud, RabbitMQ para mensageria e banco de dados distribuído.</p>
+                <button class="btn-modern" style="font-size: 0.9rem; padding: 10px 20px;">Ver no GitHub</button>
+            </div>
         </div>
     </section>
 
@@ -84,19 +108,6 @@
                 <p style="color: var(--text-secondary);">Minha fé é minha base. Ela me traz equilíbrio e reforça valores inegociáveis: ética, responsabilidade e respeito. Sigo convicto de que cada passo faz parte de algo maior.</p>
             </div>
         </div>
-    </section>
-
-    <!-- Seção de Contato -->
-    <section id="contato" class="content" style="padding-bottom: 60px;">
-        <h2 class="section-title">Entre em Contato</h2>
-        <p style="text-align: center; color: var(--text-secondary); margin-bottom: 30px;">Tem uma proposta ou quer trocar uma ideia? Envie uma mensagem!</p>
-        
-        <form action="https://formspree.io/f/SEU_CODIGO_FORMSPREE_AQUI" method="POST" style="max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px;">
-            <input type="text" name="name" placeholder="Seu Nome" required style="padding: 15px; border-radius: 8px; border: 1px solid #333; background-color: #1a1a1a; color: #fff; font-family: inherit;">
-            <input type="email" name="email" placeholder="Seu E-mail" required style="padding: 15px; border-radius: 8px; border: 1px solid #333; background-color: #1a1a1a; color: #fff; font-family: inherit;">
-            <textarea name="message" placeholder="Sua Mensagem" rows="5" required style="padding: 15px; border-radius: 8px; border: 1px solid #333; background-color: #1a1a1a; color: #fff; font-family: inherit; resize: vertical;"></textarea>
-            <button type="submit" class="btn-modern" style="width: 100%; cursor: pointer;">Enviar Mensagem</button>
-        </form>
     </section>
 
   </main>
