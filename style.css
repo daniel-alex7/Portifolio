@@ -52,6 +52,10 @@ nav a {
     transition: color 0.3s ease;
 }
 
+nav a.active {
+    color: var(--accent-color);
+}
+
 nav a:hover {
     color: var(--accent-color);
 }

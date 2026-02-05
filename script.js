@@ -1,3 +1,13 @@
+// --- NAVEGAÇÃO ATIVA ---
+const navLinks = document.querySelectorAll('.main-header nav a');
+const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+
+navLinks.forEach(link => {
+    if (link.getAttribute('href') === currentPage) {
+        link.classList.add('active');
+    }
+});
+
 // --- JOGO DA MEMÓRIA ---
 const gameBoard = document.getElementById('memory-game');
 
@@ -87,24 +97,29 @@ if (gameBoard) {
 }
 
 // --- FILTROS DE PROJETOS ---
-const filterBtns = document.querySelectorAll('.filter-btn');
-const projectCards = document.querySelectorAll('.project-card');
+const filterContainer = document.querySelector('.filter-container');
 
-if (filterBtns.length > 0) {
-    filterBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            filterBtns.forEach(b => b.classList.remove('active'));
+if (filterContainer) {
+    filterContainer.addEventListener('click', (e) => {
+        if (e.target.classList.contains('filter-btn')) {
+            const btn = e.target;
+            
+            // Atualizar botões
+            filterContainer.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
 
+            // Filtrar cards (busca dinâmica)
             const filterValue = btn.getAttribute('data-filter');
+            const currentCards = document.querySelectorAll('.project-card');
 
-            projectCards.forEach(card => {
-                if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
-                    card.style.display = 'flex';
+            currentCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                if (filterValue === 'all' || category === filterValue) {
+                    card.style.display = ''; // Reseta para o padrão do CSS
                 } else {
                     card.style.display = 'none';
                 }
             });
-        });
+        }
     });
 }
