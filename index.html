@@ -14,7 +14,7 @@
     <header class="main-header">
         <div class="logo">Daniel Silva</div>
         <nav>
-            <a href="index.html" style="color: var(--accent-color);">Home</a>
+            <a href="index.html">Home</a>
             <a href="habilidades.html">Habilidades</a>
             <a href="projetos.html">Projetos</a>
             <a href="contato.html">Contato</a>
@@ -41,15 +41,15 @@
     <section id="habilidades" class="content">
         <h2 class="section-title">Habilidades Técnicas</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; text-align: center;">
-            <div style="background: #1a1a1a; padding: 20px; border-radius: 10px; border: 1px solid #333;">
+            <div class="card" style="padding: 20px;">
                 <h3 style="color: var(--accent-color); margin-bottom: 10px;">Back-end</h3>
                 <p style="color: var(--text-secondary);">Java, Spring Boot, Node.js, API RESTful</p>
             </div>
-            <div style="background: #1a1a1a; padding: 20px; border-radius: 10px; border: 1px solid #333;">
+            <div class="card" style="padding: 20px;">
                 <h3 style="color: var(--accent-color); margin-bottom: 10px;">Dados</h3>
                 <p style="color: var(--text-secondary);">SQL (PostgreSQL, MySQL), NoSQL (MongoDB)</p>
             </div>
-            <div style="background: #1a1a1a; padding: 20px; border-radius: 10px; border: 1px solid #333;">
+            <div class="card" style="padding: 20px;">
                 <h3 style="color: var(--accent-color); margin-bottom: 10px;">DevOps & Tools</h3>
                 <p style="color: var(--text-secondary);">Docker, Git, AWS, Linux</p>
             </div>
@@ -60,13 +60,13 @@
     <section id="projetos" class="content">
         <h2 class="section-title">Meus Projetos</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
-            <div style="background: #1a1a1a; padding: 25px; border-radius: 15px; border: 1px solid #333;">
-                <h3 style="color: #fff; margin-bottom: 10px;">API de Gestão</h3>
+            <div class="card">
+                <h3 style="margin-bottom: 10px;">API de Gestão</h3>
                 <p style="color: var(--text-secondary); margin-bottom: 20px;">Sistema backend robusto com autenticação JWT, documentação Swagger e testes automatizados.</p>
                 <button class="btn-modern" style="font-size: 0.9rem; padding: 10px 20px;">Ver no GitHub</button>
             </div>
-            <div style="background: #1a1a1a; padding: 25px; border-radius: 15px; border: 1px solid #333;">
-                <h3 style="color: #fff; margin-bottom: 10px;">Microsserviços E-commerce</h3>
+            <div class="card">
+                <h3 style="margin-bottom: 10px;">Microsserviços E-commerce</h3>
                 <p style="color: var(--text-secondary); margin-bottom: 20px;">Arquitetura escalável utilizando Spring Cloud, RabbitMQ para mensageria e banco de dados distribuído.</p>
                 <button class="btn-modern" style="font-size: 0.9rem; padding: 10px 20px;">Ver no GitHub</button>
             </div>

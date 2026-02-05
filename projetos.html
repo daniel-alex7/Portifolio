@@ -95,7 +95,24 @@
                             'sql': 'devicon-mysql-plain colored'
                         };
                         
+                        // Mapa de Backgrounds (Gradients baseados na linguagem)
+                        const languageBackgrounds = {
+                            'javascript': 'linear-gradient()',
+                            'typescript': 'linear-gradient()',
+                            'python': 'linear-gradient()',
+                            'java': 'linear-gradient()',
+                            'c#': 'linear-gradient()',
+                            'php': 'linear-gradient()',
+                            'html': 'linear-gradient()',
+                            'css': 'linear-gradient()',
+                            'vue': 'linear-gradient()',
+                            'react': 'linear-gradient()',
+                            'sql': 'linear-gradient()',
+                            'kotlin': 'linear-gradiente()'
+                        };
+
                         const iconClass = languageIcons[lang] || 'fas fa-code';
+                        const bgStyle = languageBackgrounds[lang] || 'linear-gradient(135deg, #1e293b 0%, #38bdf8 100%)';
                         
                         if (['javascript', 'typescript', 'java', 'python', 'php', 'go', 'ruby', 'c#'].includes(lang)) {
                             category = 'backend'; // Simplificação, pode ajustar
@@ -116,8 +133,8 @@
                         const description = repo.description || 'Sem descrição fornecida.';
                         
                         card.innerHTML = `
-                            <div class="card-image" style="background-color: #333; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 2rem;">
-                                <span>${repo.name.charAt(0).toUpperCase()}</span>
+                            <div class="card-image" style="background: ${bgStyle};">
+                                <i class="${iconClass} card-image-icon"></i>
                             </div>
                             <h3>${repo.name}</h3>
                             <p>${description}</p>
@@ -125,7 +142,7 @@
                                 ${repo.language ? `<span class="tech-tag"><i class="${iconClass}"></i> ${repo.language}</span>` : ''}
                                 <span class="tech-tag"><i class="fab fa-github"></i> GitHub</span>
                             </div>
-                            <a href="${repo.html_url}" target="_blank" class="btn-modern" style="text-decoration: none; display: inline-block; text-align: center;">Ver Código</a>
+                            <a href="${repo.html_url}" target="_blank" class="btn-modern">Ver Código</a>
                         `;
                         
                         container.appendChild(card);
