@@ -15,104 +15,209 @@
     <header class="main-header">
         <div class="logo">Daniel Silva</div>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="habilidades.html">Habilidades</a>
-            <a href="projetos.html">Projetos</a>
-            <a href="contatos.html">Contato</a>
+            <a href="#inicio">Início</a>
+            <a href="#visao">Visão</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
         </nav>
     </header>
 
     <main>
-    <!-- Resumo e Videos -->
-    <section class="content hero-section" id="resumo">
-        <div class="hero-content">
-            <h1>Desenvolvedor Back-end<br></h1>
-            <p class="typing-effect">Transformando dados e lógica em soluções escaláveis.</p>
-            <div class="hero-buttons">
-                <a href="projetos.html"><button class="btn-modern">Ver Projetos</button></a>
-                <a href="https://github.com/daniel-alex7" target="_blank"><button class="btn-outline">Acessar GitHub</button></a>
+        <div class="journey-wrapper">
+            <!-- Linha Central da Jornada -->
+            <div class="path-line"></div>
+
+            <!-- NÍVEL 1: INÍCIO (HERO) -->
+            <div class="level-node" id="inicio">
+                <div class="node-icon">👋</div>
+                <div class="node-content">
+                    <div class="hero-section" style="min-height: auto; grid-template-columns: 1fr; text-align: center;">
+                        <div class="hero-content">
+                            <h1>Desenvolvedor Back-end</h1>
+                            <p class="typing-effect" style="margin: 0 auto 30px auto;">Transformando dados e lógica em soluções escaláveis.</p>
+                            <div class="hero-buttons" style="justify-content: center;">
+                                <a href="#projetos"><button class="btn-modern">Ver Projetos</button></a>
+                                <a href="https://github.com/daniel-alex7" target="_blank"><button class="btn-outline">GitHub</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <!-- NÍVEL 2: VISÃO E VALORES -->
+            <div class="level-node" id="visao">
+                <div class="node-icon" style="border-color: var(--accent-color);">🚀</div>
+                <div class="node-content">
+                    <h2 class="section-title" style="text-align: center; width: 100%;">Minha Visão & Valores</h2>
+                    <div class="story-container" style="border: none; padding: 0;">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                            <div class="card">
+                                <h3 style="color: var(--primary-color);">🎯 Propósito</h3>
+                                <p style="font-size: 0.9rem; color: var(--text-secondary);">
+                                    Construir um futuro sólido através da tecnologia. O estudo é meu caminho para mudar realidades e criar impacto.
+                                </p>
+                            </div>
+                            <div class="card">
+                                <h3 style="color: var(--primary-color);">⚓ Pilares</h3>
+                                <p style="font-size: 0.9rem; color: var(--text-secondary);">
+                                    Fé, ética e responsabilidade são inegociáveis. Acredito que o crescimento real vem da constância e do esforço diário.
+                                </p>
+                            </div>
+                            <div class="card">
+                                <h3 style="color: var(--primary-color);">⚡ Foco</h3>
+                                <p style="font-size: 0.9rem; color: var(--text-secondary);">
+                                    Especialização em Back-end, Cloud e Dados. Busco não apenas escrever código, mas entender o "motor" dos sistemas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NÍVEL 3: HABILIDADES -->
+            <div class="level-node" id="habilidades">
+                <div class="node-icon" style="border-color: var(--secondary-color);">🛠️</div>
+                <div class="node-content">
+                    <h2 class="section-title" style="text-align: center; width: 100%;">Arsenal Técnico</h2>
+                    
+                    <div class="skills-container">
+                        <!-- Tech -->
+                        <div class="skill-card">
+                            <h3> Back-end & Cloud</h3>
+                            <div class="skill-chips">
+                                <span class="skill-chip">Java</span>
+                                <span class="skill-chip">Spring Boot</span>
+                                <span class="skill-chip">Node.js</span>
+                                <span class="skill-chip">AWS Lambda</span>
+                                <span class="skill-chip">SQL (Postgres/MySQL)</span>
+                                <span class="skill-chip">Docker</span>
+                                <span class="skill-chip">API REST</span>
+                            </div>
+                        </div>
+
+                        <!-- Dados -->
+                        <div class="skill-card">
+                            <h3> Dados & Observabilidade</h3>
+                            <div class="skill-chips">
+                                <span class="skill-chip">Grafana</span>
+                                <span class="skill-chip">Prometheus</span>
+                                <span class="skill-chip">Dynatrace</span>
+                                <span class="skill-chip">Power BI</span>
+                                <span class="skill-chip">Excel Avançado</span>
+                            </div>
+                        </div>
+
+                        <!-- Soft Skills -->
+                        <div class="skill-card">
+                            <h3> Soft Skills</h3>
+                            <div class="skill-chips">
+                                <span class="skill-chip">Visão Sistêmica</span>
+                                <span class="skill-chip">Resiliência</span>
+                                <span class="skill-chip">Trabalho em Equipe</span>
+                                <span class="skill-chip">Aprendizado Contínuo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NÍVEL 4: PROJETOS -->
+            <div class="level-node" id="projetos">
+                <div class="node-icon" style="border-color: #ff9600;"></div>
+                <div class="node-content">
+                    <h2 class="section-title" style="text-align: center; width: 100%;">Meus Projetos</h2>
+                    <p style="text-align: center; margin-bottom: 20px; color: var(--text-secondary);">
+                        Repositórios públicos carregados diretamente do GitHub.
+                    </p>
+                    
+                    <div class="cards" id="projects-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+                        <p id="loading-text" style="width: 100%; text-align: center;">Carregando projetos...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NÍVEL 5: CONTATO -->
+            <div class="level-node" id="contato">
+                <div class="node-icon" style="border-color: #58cc02; color: #58cc02; background: #131f24;">✉️</div>
+                <div class="node-content">
+                    <h2 class="section-title" style="text-align: center; width: 100%;">Vamos Conversar?</h2>
+                    <div class="contact-container" style="grid-template-columns: 1fr;">
+                        <form class="contact-form" action="mailto:daniel456alexandre@gmail.com" method="post" enctype="text/plain">
+                            <div class="form-group">
+                                <label>Nome</label>
+                                <input type="text" name="name" placeholder="Seu Nome" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" name="email" placeholder="seu@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Mensagem</label>
+                                <textarea name="message" rows="4" placeholder="Como posso ajudar?" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-modern" style="width: 100%; background: #58cc02; color: white;">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div class="hero-image">
-            <img src="img/Captura de tela 2025-12-23 114228.png" alt="Foto de Daniel Silva">
-        </div>
-    </section>
-
-    <!-- Seção Habilidades -->
-    <section id="habilidades" class="content">
-        <h2 class="section-title">Habilidades Técnicas</h2>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; text-align: center;">
-            <div class="card" style="padding: 20px;">
-                <h3 style="color: var(--accent-color); margin-bottom: 10px;">Back-end</h3>
-                <p style="color: var(--text-secondary);">Java, Spring Boot, Node.js, API RESTful</p>
-            </div>
-            <div class="card" style="padding: 20px;">
-                <h3 style="color: var(--accent-color); margin-bottom: 10px;">Dados</h3>
-                <p style="color: var(--text-secondary);">SQL (PostgreSQL, MySQL), NoSQL (MongoDB)</p>
-            </div>
-            <div class="card" style="padding: 20px;">
-                <h3 style="color: var(--accent-color); margin-bottom: 10px;">DevOps & Tools</h3>
-                <p style="color: var(--text-secondary);">Docker, Git, AWS, Linux</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção Projetos -->
-    <section id="projetos" class="content">
-        <h2 class="section-title">Meus Projetos</h2>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
-            <div class="card">
-                <h3 style="margin-bottom: 10px;">API de Gestão</h3>
-                <p style="color: var(--text-secondary); margin-bottom: 20px;">Sistema backend robusto com autenticação JWT, documentação Swagger e testes automatizados.</p>
-                <button class="btn-modern" style="font-size: 0.9rem; padding: 10px 20px;">Ver no GitHub</button>
-            </div>
-            <div class="card">
-                <h3 style="margin-bottom: 10px;">Microsserviços E-commerce</h3>
-                <p style="color: var(--text-secondary); margin-bottom: 20px;">Arquitetura escalável utilizando Spring Cloud, RabbitMQ para mensageria e banco de dados distribuído.</p>
-                <button class="btn-modern" style="font-size: 0.9rem; padding: 10px 20px;">Ver no GitHub</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção Minha História -->
-    <section id="about" style="padding: 0 20px 60px 20px; max-width: 1000px; margin: 0 auto;">
-        <h2 class="section-title">Minha Jornada</h2>
-        
-        <div class="story-container">
-            <div class="story-chapter">
-                <h3 style="color: var(--accent-color); margin-bottom: 10px;">🌱 O Início & Propósito</h3>
-                <p style="color: var(--text-secondary);">Minha história é marcada por decisão. Desde cedo, entendi que precisava construir um futuro sólido para mim e para quem amo. O estudo sempre foi meu caminho para mudar de realidade.</p>
-            </div>
-
-            <div class="story-chapter">
-                <h3 style="color: var(--accent-color); margin-bottom: 10px;">🚀 A Descoberta da Tecnologia</h3>
-                <p style="color: var(--text-secondary);">Comecei em Análise e Desenvolvimento de Sistemas, onde a lógica de programação me fascinou. Percebi que não queria apenas usar sistemas, mas entender o "motor" por trás deles: dados, infraestrutura e servidores.</p>
-            </div>
-
-            <div class="story-chapter">
-                <h3 style="color: var(--accent-color); margin-bottom: 10px;">📚 Aprofundando Raízes</h3>
-                <p style="color: var(--text-secondary);">Migrei para Ciência da Computação em busca de profundidade. Enfrentei burocracias e desafios que, longe de me pararem, fortaleceram minha resiliência e maturidade.</p>
-            </div>
-
-            <div class="story-chapter">
-                <h3 style="color: var(--accent-color); margin-bottom: 10px;">⚡ Disciplina & Rotina</h3>
-                <p style="color: var(--text-secondary);">Conciliando trabalho e faculdade, aprendi na prática o valor da constância. O crescimento real acontece no esforço diário, mesmo nos dias difíceis.</p>
-            </div>
-
-            <div class="story-chapter">
-                <h3 style="color: var(--accent-color); margin-bottom: 10px;">🎯 Visão de Futuro</h3>
-                <p style="color: var(--text-secondary);">Meu foco está em Back-end, Cloud e Dados. Mais do que uma carreira, construo estabilidade para realizar sonhos pessoais, como formar minha família até 2027.</p>
-            </div>
-
-            <div class="story-chapter">
-                <h3 style="color: var(--accent-color); margin-bottom: 10px;">⚓ Meus Pilares</h3>
-                <p style="color: var(--text-secondary);">Minha fé é minha base. Ela me traz equilíbrio e reforça valores inegociáveis: ética, responsabilidade e respeito. Sigo convicto de que cada passo faz parte de algo maior.</p>
-            </div>
-        </div>
-    </section>
-
   </main>
     
     <script src="script.js"></script>
+    <script>
+        // Script Integrado para Carregar Projetos
+        document.addEventListener('DOMContentLoaded', () => {
+            const username = 'daniel-alex7';
+            const container = document.getElementById('projects-container');
+            const loadingText = document.getElementById('loading-text');
+
+            fetch(`https://api.github.com/users/${username}/repos?sort=updated`)
+                .then(response => response.json())
+                .then(repos => {
+                    loadingText.style.display = 'none';
+                    if (!Array.isArray(repos) || repos.length === 0) {
+                        container.innerHTML = '<p>Nenhum projeto público encontrado.</p>';
+                        return;
+                    }
+
+                    // Pegar apenas os 6 primeiros para não poluir a página única
+                    const topRepos = repos.slice(0, 6);
+
+                    topRepos.forEach(repo => {
+                        const lang = repo.language ? repo.language : 'Code';
+                        
+                        // Ícones simples baseados na linguagem (fallback genérico)
+                        let iconClass = 'fas fa-code';
+                        if(lang.includes('Java')) iconClass = 'fab fa-java';
+                        if(lang.includes('Python')) iconClass = 'fab fa-python';
+                        if(lang.includes('Script')) iconClass = 'fab fa-js';
+
+                        const card = document.createElement('div');
+                        card.className = 'card';
+                        card.style.padding = '20px';
+                        
+                        card.innerHTML = `
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                                <h3 style="font-size: 1.1rem; margin: 0;">${repo.name}</h3>
+                                <span style="font-size: 0.8rem; background: rgba(56, 189, 248, 0.1); color: var(--primary-color); padding: 4px 8px; border-radius: 10px;">${lang}</span>
+                            </div>
+                            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 20px; height: 60px; overflow: hidden;">
+                                ${repo.description || 'Sem descrição.'}
+                            </p>
+                            <a href="${repo.html_url}" target="_blank" class="btn-outline" style="font-size: 0.8rem; padding: 8px 16px; width: 100%; text-align: center;">Ver Código</a>
+                        `;
+                        container.appendChild(card);
+                    });
+                })
+                .catch(err => {
+                    console.error(err);
+                    loadingText.innerText = 'Erro ao carregar projetos.';
+                });
+        });
+    </script>
+    <!-- FontAwesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </body>
 </html>
