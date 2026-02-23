@@ -10,7 +10,7 @@
     --accent-color: #f43f5e; /* Rosa: Paixão & Ação */
     
     --text-primary: #f8fafc;
-    --text-secondary: #94a3b8;
+    --text-secondary: #e2e8f0;
     --gradient-main: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     --gradient-accent: linear-gradient(135deg, var(--accent-color), #fb7185);
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -412,7 +412,7 @@ input:focus, textarea:focus {
     bottom: 100px;
     left: 50%;
     width: 8px;
-    background: linear-gradient(to bottom, var(--bg-color), var(--primary-color), var(--secondary-color), var(--bg-color));
+    display: none;
     transform: translateX(-50%);
     z-index: 0;
     border-radius: 4px;
