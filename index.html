@@ -25,165 +25,289 @@
         </nav>
     </header>
 
-    <main>
-        <div class="journey-wrapper">
-            <!-- Linha Central da Jornada -->
-            <div class="path-line"></div>
-
-            <!-- NÍVEL 1: INÍCIO (HERO) -->
-            <div class="level-node" id="inicio">
-                <div class="node-icon"></div>
-                <div class="node-content">
-                    <div class="hero-section" style="min-height: auto; grid-template-columns: 1fr; text-align: center;">
-                        <div class="hero-content">
-                            <h1>Desenvolvedor Back-end</h1>
-                            <p class="typing-effect" style="margin: 0 auto 30px auto;">Transformando dados e lógica em soluções escaláveis.</p>
-                            <div class="hero-buttons" style="justify-content: center;">
-                                <a href="#projetos"><button class="btn-modern">Ver Projetos</button></a>
-                                <a href="https://github.com/daniel-alex7" target="_blank"><button class="btn-outline">GitHub</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- NÍVEL 2: VISÃO E VALORES -->
-            <div class="level-node" id="visao">
-                <div class="node-icon" style="border-color: var(--accent-color);"></div>
-                <div class="node-content">
-                    <h2 class="section-title" style="text-align: center; width: 100%;">Minha Visão & Valores</h2>
-                    <div class="story-container" style="border: none; padding: 0;">
-                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
-                            <div class="card">
-                                <h3 style="color: var(--primary-color);"> Propósito</h3>
-                                <p style="font-size: 0.9rem; color: var(--text-secondary);">
-                                    Construir um futuro sólido através da tecnologia. O estudo é meu caminho para mudar realidades e criar impacto.
-                                </p>
-                            </div>
-                            <div class="card">
-                                <h3 style="color: var(--primary-color);"> Pilares</h3>
-                                <p style="font-size: 0.9rem; color: var(--text-secondary);">
-                                    Fé, ética e responsabilidade são inegociáveis. Acredito que o crescimento real vem da constância e do esforço diário.
-                                </p>
-                            </div>
-                            <div class="card">
-                                <h3 style="color: var(--primary-color);"> Foco</h3>
-                                <p style="font-size: 0.9rem; color: var(--text-secondary);">
-                                    Especialização em Back-end, Cloud e Dados. Busco não apenas escrever código, mas entender o "motor" dos sistemas.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- NÍVEL 3: HABILIDADES -->
-            <div class="level-node" id="habilidades">
-                <div class="node-icon" style="border-color: var(--secondary-color);"></div>
-                <div class="node-content">
-                    <h2 class="section-title" style="text-align: center; width: 100%;">Arsenal Técnico</h2>
-                    
-                    <div class="skills-container">
-                        <!-- Tech -->
-                        <div class="skill-card">
-                            <h3> Back-end & Cloud</h3>
-                            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 15px;">Desenvolvimento de APIs robustas, microsserviços e arquiteturas serverless com foco em performance.</p>
-                            <div class="skill-chips">
-                                <span class="skill-chip">Java</span>
-                                <span class="skill-chip">Spring Boot</span>
-                                <span class="skill-chip">Node.js</span>
-                                <span class="skill-chip">AWS Lambda</span>
-                                <span class="skill-chip">SQL (Postgres/MySQL)</span>
-                                <span class="skill-chip">Docker</span>
-                                <span class="skill-chip">API REST</span>
-                            </div>
-                        </div>
-
-                        <!-- Dados -->
-                        <div class="skill-card">
-                            <h3> Dados & Observabilidade</h3>
-                            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 15px;">Monitoramento em tempo real e transformação de dados brutos em insights acionáveis.</p>
-                            <div class="skill-chips">
-                                <span class="skill-chip">Grafana</span>
-                                <span class="skill-chip">Prometheus</span>
-                                <span class="skill-chip">Dynatrace</span>
-                                <span class="skill-chip">Power BI</span>
-                                <span class="skill-chip">Excel Avançado</span>
-                            </div>
-                        </div>
-
-                        <!-- Soft Skills -->
-                        <div class="skill-card">
-                            <h3> Soft Skills</h3>
-                            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 15px;">Habilidades interpessoais essenciais para colaboração e entrega de valor contínuo.</p>
-                            <div class="skill-chips">
-                                <span class="skill-chip">Visão Sistêmica</span>
-                                <span class="skill-chip">Resiliência</span>
-                                <span class="skill-chip">Trabalho em Equipe</span>
-                                <span class="skill-chip">Aprendizado Contínuo</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- NÍVEL 4: PROJETOS -->
-            <div class="level-node" id="projetos">
-                <div class="node-icon" style="border-color: #ff9600;"></div>
-                <div class="node-content">
-                    <h2 class="section-title" style="text-align: center; width: 100%;">Meus Projetos</h2>
-                    <p style="text-align: center; margin-bottom: 20px;">
-                        Repositórios públicos carregados diretamente do GitHub.
-                    </p>
-                    
-                    <!-- Seção de Destaque (Conteúdo Real Manual) -->
-                    <div style="margin-bottom: 30px;">
-                        <div class="card border-0 shadow-sm featured-card">
-                            <div class="card-body">
-                                <h3 class="card-title"><i class="fas fa-star"></i> Projeto Destaque: API de Gestão de Pedidos</h3>
-                                <p class="card-text">
-                                    Sistema completo de backend para e-commerce. Desenvolvido com <strong>Spring Boot 3</strong> e <strong>PostgreSQL</strong>. 
-                                    Inclui autenticação JWT, documentação via Swagger/OpenAPI e cobertura de testes com JUnit.
-                                    Arquitetura limpa e pronta para deploy em container Docker.
-                                </p>
-                                <a href="https://github.com/daniel-alex7" target="_blank" class="btn btn-primary btn-sm">Ver Repositório Completo</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="cards" id="projects-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
-                        <p id="loading-text" style="width: 100%; text-align: center;">Carregando projetos...</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- NÍVEL 5: CONTATO -->
-            <div class="level-node" id="contato">
-                <div class="node-icon" style="border-color: #58cc02; color: #58cc02; background: #131f24;"></div>
-                <div class="node-content">
-                    <h2 class="section-title" style="text-align: center; width: 100%;">Vamos Conversar?</h2>
-                    <div class="contact-container" style="grid-template-columns: 1fr;">
-                        <form class="contact-form" action="mailto:daniel456alexandre@gmail.com" method="post" enctype="text/plain">
-                            <div class="mb-3">
-                                <label class="form-label">Nome</label>
-                                <input type="text" name="name" class="form-control" placeholder="Seu Nome" required>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Email</label>
-                                <input type="email" name="email" class="form-control" placeholder="seu@email.com" required>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Mensagem</label>
-                                <textarea name="message" class="form-control" rows="4" placeholder="Como posso ajudar?" required></textarea>
-                            </div>
-                            <button type="submit" class="btn-modern w-100 fw-bold">Enviar Mensagem</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-  </main>
+     <main>
+-        <div class="journey-wrapper">
+-            <!-- Linha Central da Jornada -->
+-            <div class="path-line"></div>
+-
+-            <!-- NÍVEL 1: INÍCIO (HERO) -->
+-            <div class="level-node" id="inicio">
+-                <div class="node-icon"></div>
+-                <div class="node-content">
+-                    <div class="hero-section" style="min-height: auto; grid-template-columns: 1fr; text-align: center;">
+-                        <div class="hero-content">
+-                            <h1>Desenvolvedor Back-end</h1>
+-                            <p class="typing-effect" style="margin: 0 auto 30px auto;">Transformando dados e lógica em soluções escaláveis.</p>
+-                            <div class="hero-buttons" style="justify-content: center;">
+-                                <a href="#projetos"><button class="btn-modern">Ver Projetos</button></a>
+-                                <a href="https://github.com/daniel-alex7" target="_blank"><button class="btn-outline">GitHub</button></a>
+-                            </div>
+-                        </div>
++        <!-- SEÇÃO 1: INÍCIO (HERO) -->
++        <section id="inicio" class="hero-section" style="min-height: auto; grid-template-columns: 1fr; text-align: center;">
++            <div class="hero-content">
++                <h1>Desenvolvedor Back-end</h1>
++                <p class="typing-effect" style="margin: 0 auto 30px auto;">Transformando dados e lógica em soluções escaláveis.</p>
++                <div class="hero-buttons" style="justify-content: center;">
++                    <a href="#projetos"><button class="btn-modern">Ver Projetos</button></a>
++                    <a href="https://github.com/daniel-alex7" target="_blank"><button class="btn-outline">GitHub</button></a>
++                </div>
++            </div>
++        </section>
++
++        <!-- SEÇÃO 2: VISÃO E VALORES -->
++        <section id="visao" class="section-container">
++            <h2 class="section-title" style="text-align: center; width: 100%;">Minha Visão & Valores</h2>
++            <div class="story-container" style="border: none; padding: 0;">
++                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
++                    <div class="card">
++                        <h3 style="color: var(--primary-color);"> Propósito</h3>
++                        <p style="font-size: 0.9rem; color: var(--text-secondary);">
++                            Construir um futuro sólido através da tecnologia. O estudo é meu caminho para mudar realidades e criar impacto.
++                        </p>
+                     </div>
+-                </div>
+-            </div>
+-
+-            <!-- NÍVEL 2: VISÃO E VALORES -->
+-            <div class="level-node" id="visao">
+-                <div class="node-icon" style="border-color: var(--accent-color);"></div>
+-                <div class="node-content">
+-                    <h2 class="section-title" style="text-align: center; width: 100%;">Minha Visão & Valores</h2>
+-                    <div class="story-container" style="border: none; padding: 0;">
+-                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+-                            <div class="card">
+-                                <h3 style="color: var(--primary-color);"> Propósito</h3>
+-                                <p style="font-size: 0.9rem; color: var(--text-secondary);">
+-                                    Construir um futuro sólido através da tecnologia. O estudo é meu caminho para mudar realidades e criar impacto.
+-                                </p>
+-                            </div>
+-                            <div class="card">
+-                                <h3 style="color: var(--primary-color);"> Pilares</h3>
+-                                <p style="font-size: 0.9rem; color: var(--text-secondary);">
+-                                    Fé, ética e responsabilidade são inegociáveis. Acredito que o crescimento real vem da constância e do esforço diário.
+-                                </p>
+-                            </div>
+-                            <div class="card">
+-                                <h3 style="color: var(--primary-color);"> Foco</h3>
+-                                <p style="font-size: 0.9rem; color: var(--text-secondary);">
+-                                    Especialização em Back-end, Cloud e Dados. Busco não apenas escrever código, mas entender o "motor" dos sistemas.
+-                                </p>
+-                            </div>
+-                        </div>
++                    <div class="card">
++                        <h3 style="color: var(--primary-color);"> Pilares</h3>
++                        <p style="font-size: 0.9rem; color: var(--text-secondary);">
++                            Fé, ética e responsabilidade são inegociáveis. Acredito que o crescimento real vem da constância e do esforço diário.
++                        </p>
+                     </div>
+-                </div>
+-            </div>
+-
+-            <!-- NÍVEL 3: HABILIDADES -->
+-            <div class="level-node" id="habilidades">
+-                <div class="node-icon" style="border-color: var(--secondary-color);"></div>
+-                <div class="node-content">
+-                    <h2 class="section-title" style="text-align: center; width: 100%;">Arsenal Técnico</h2>
+-                    
+-                    <div class="skills-container">
+-                        <!-- Tech -->
+-                        <div class="skill-card">
+-                            <h3> Back-end & Cloud</h3>
+-                            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 15px;">Desenvolvimento de APIs robustas, microsserviços e arquiteturas serverless com foco em performance.</p>
+-                            <div class="skill-chips">
+-                                <span class="skill-chip">Java</span>
+-                                <span class="skill-chip">Spring Boot</span>
+-                                <span class="skill-chip">Node.js</span>
+-                                <span class="skill-chip">AWS Lambda</span>
+-                                <span class="skill-chip">SQL (Postgres/MySQL)</span>
+-                                <span class="skill-chip">Docker</span>
+-                                <span class="skill-chip">API REST</span>
+-                            </div>
+-                        </div>
+-
+-                        <!-- Dados -->
+-                        <div class="skill-card">
+-                            <h3> Dados & Observabilidade</h3>
+-                            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 15px;">Monitoramento em tempo real e transformação de dados brutos em insights acionáveis.</p>
+-                            <div class="skill-chips">
+-                                <span class="skill-chip">Grafana</span>
+-                                <span class="skill-chip">Prometheus</span>
+-                                <span class="skill-chip">Dynatrace</span>
+-                                <span class="skill-chip">Power BI</span>
+-                                <span class="skill-chip">Excel Avançado</span>
+-                            </div>
+-                        </div>
+-
+-                        <!-- Soft Skills -->
+-                        <div class="skill-card">
+-                            <h3> Soft Skills</h3>
+-                            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 15px;">Habilidades interpessoais essenciais para colaboração e entrega de valor contínuo.</p>
+-                            <div class="skill-chips">
+-                                <span class="skill-chip">Visão Sistêmica</span>
+-                                <span class="skill-chip">Resiliência</span>
+-                                <span class="skill-chip">Trabalho em Equipe</span>
+-                                <span class="skill-chip">Aprendizado Contínuo</span>
+-                            </div>
+-                        </div>
++                    <div class="card">
++                        <h3 style="color: var(--primary-color);"> Foco</h3>
++                        <p style="font-size: 0.9rem; color: var(--text-secondary);">
++                            Especialização em Back-end, Cloud e Dados. Busco não apenas escrever código, mas entender o "motor" dos sistemas.
++                        </p>
+                     </div>
+                 </div>
+-            </div>
+-
+-            <!-- NÍVEL 4: PROJETOS -->
+-            <div class="level-node" id="projetos">
+-                <div class="node-icon" style="border-color: #ff9600;"></div>
+-                <div class="node-content">
+-                    <h2 class="section-title" style="text-align: center; width: 100%;">Meus Projetos</h2>
+-                    <p style="text-align: center; margin-bottom: 20px;">
+-                        Repositórios públicos carregados diretamente do GitHub.
+-                    </p>
+-                    
+-                    <!-- Seção de Destaque (Conteúdo Real Manual) -->
+-                    <div style="margin-bottom: 30px;">
+-                        <div class="card border-0 shadow-sm featured-card">
+-                            <div class="card-body">
+-                                <h3 class="card-title"><i class="fas fa-star"></i> Projeto Destaque: API de Gestão de Pedidos</h3>
+-                                <p class="card-text">
+-                                    Sistema completo de backend para e-commerce. Desenvolvido com <strong>Spring Boot 3</strong> e <strong>PostgreSQL</strong>. 
+-                                    Inclui autenticação JWT, documentação via Swagger/OpenAPI e cobertura de testes com JUnit.
+-                                    Arquitetura limpa e pronta para deploy em container Docker.
+-                                </p>
+-                                <a href="https://github.com/daniel-alex7" target="_blank" class="btn btn-primary btn-sm">Ver Repositório Completo</a>
+-                            </div>
+-                        </div>
++            </div>
++        </section>
++
++        <!-- SEÇÃO 3: HABILIDADES -->
++        <section id="habilidades" class="section-container">
++            <h2 class="section-title" style="text-align: center; width: 100%;">Arsenal Técnico</h2>
++            
++            <div class="skills-container">
++                <!-- Tech -->
++                <div class="skill-card">
++                    <h3> Back-end & Cloud</h3>
++                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 15px;">Desenvolvimento de APIs robustas, microsserviços e arquiteturas serverless com foco em performance.</p>
++                    <div class="skill-chips">
++                        <span class="skill-chip">Java</span>
++                        <span class="skill-chip">Spring Boot</span>
++                        <span class="skill-chip">Node.js</span>
++                        <span class="skill-chip">AWS Lambda</span>
++                        <span class="skill-chip">SQL (Postgres/MySQL)</span>
++                        <span class="skill-chip">Docker</span>
++                        <span class="skill-chip">API REST</span>
+                     </div>
+                 </div>
+-            </div>
+-
+-            <!-- NÍVEL 5: CONTATO -->
+-            <div class="level-node" id="contato">
+-                <div class="node-icon" style="border-color: #58cc02; color: #58cc02; background: #131f24;"></div>
+-                <div class="node-content">
+-                    <h2 class="section-title" style="text-align: center; width: 100%;">Vamos Conversar?</h2>
+-                    <div class="contact-container" style="grid-template-columns: 1fr;">
+-                        <form class="contact-form" action="mailto:daniel456alexandre@gmail.com" method="post" enctype="text/plain">
+-                            <div class="mb-3">
+-                                <label class="form-label">Nome</label>
+-                                <input type="text" name="name" class="form-control" placeholder="Seu Nome" required>
+-                            </div>
+-                            <div class="mb-3">
+-                                <label class="form-label">Email</label>
+-                                <input type="email" name="email" class="form-control" placeholder="seu@email.com" required>
+-                            </div>
+-                            <div class="mb-3">
+-                                <label class="form-label">Mensagem</label>
+-                                <textarea name="message" class="form-control" rows="4" placeholder="Como posso ajudar?" required></textarea>
+-                            </div>
+-                            <button type="submit" class="btn-modern w-100 fw-bold">Enviar Mensagem</button>
+-                        </form>
++
++                <!-- Dados -->
++                <div class="skill-card">
++                    <h3> Dados & Observabilidade</h3>
++                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 15px;">Monitoramento em tempo real e transformação de dados brutos em insights acionáveis.</p>
++                    <div class="skill-chips">
++                        <span class="skill-chip">Grafana</span>
++                        <span class="skill-chip">Prometheus</span>
++                        <span class="skill-chip">Dynatrace</span>
++                        <span class="skill-chip">Power BI</span>
++                        <span class="skill-chip">Excel Avançado</span>
+                     </div>
+                 </div>
+-            </div>
+-
+-        </div>
++
++                <!-- Soft Skills -->
++                <div class="skill-card">
++                    <h3> Soft Skills</h3>
++                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 15px;">Habilidades interpessoais essenciais para colaboração e entrega de valor contínuo.</p>
++                    <div class="skill-chips">
++                        <span class="skill-chip">Visão Sistêmica</span>
++                        <span class="skill-chip">Resiliência</span>
++                        <span class="skill-chip">Trabalho em Equipe</span>
++                        <span class="skill-chip">Aprendizado Contínuo</span>
++                    </div>
++                </div>
++            </div>
++        </section>
++
++        <!-- SEÇÃO 4: PROJETOS -->
++        <section id="projetos" class="section-container">
++            <h2 class="section-title" style="text-align: center; width: 100%;">Meus Projetos</h2>
++            <p style="text-align: center; margin-bottom: 20px;">
++                Repositórios públicos carregados diretamente do GitHub.
++            </p>
++            
++            <!-- Seção de Destaque (Conteúdo Real Manual) -->
++            <div style="margin-bottom: 30px;">
++                <div class="card border-0 shadow-sm featured-card">
++                    <div class="card-body">
++                        <h3 class="card-title"><i class="fas fa-star"></i> Projeto Destaque: API de Gestão de Pedidos</h3>
++                        <p class="card-text">
++                            Sistema completo de backend para e-commerce. Desenvolvido com <strong>Spring Boot 3</strong> e <strong>PostgreSQL</strong>. 
++                            Inclui autenticação JWT, documentação via Swagger/OpenAPI e cobertura de testes com JUnit.
++                            Arquitetura limpa e pronta para deploy em container Docker.
++                        </p>
++                        <a href="https://github.com/daniel-alex7" target="_blank" class="btn btn-primary btn-sm">Ver Repositório Completo</a>
++                    </div>
++                </div>
++            </div>
++
++            <div class="cards" id="projects-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
++                <p id="loading-text" style="width: 100%; text-align: center;">Carregando projetos...</p>
++            </div>
++        </section>
++
++        <!-- SEÇÃO 5: CONTATO -->
++        <section id="contato" class="section-container">
++            <h2 class="section-title" style="text-align: center; width: 100%;">Vamos Conversar?</h2>
++            <div class="contact-container" style="grid-template-columns: 1fr;">
++                <form class="contact-form" action="mailto:daniel456alexandre@gmail.com" method="post" enctype="text/plain">
++                    <div class="mb-3">
++                        <label class="form-label">Nome</label>
++                        <input type="text" name="name" class="form-control" placeholder="Seu Nome" required>
++                    </div>
++                    <div class="mb-3">
++                        <label class="form-label">Email</label>
++                        <input type="email" name="email" class="form-control" placeholder="seu@email.com" required>
++                    </div>
++                    <div class="mb-3">
++                        <label class="form-label">Mensagem</label>
++                        <textarea name="message" class="form-control" rows="4" placeholder="Como posso ajudar?" required></textarea>
++                    </div>
++                    <button type="submit" class="btn-modern w-100 fw-bold">Enviar Mensagem</button>
++                </form>
++            </div>
++        </section>
+   </main>
+     
+     <!-- Bootstrap JS (Opcional, para componentes interativos se precisar no futuro) -->
     
     <!-- Bootstrap JS (Opcional, para componentes interativos se precisar no futuro) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
