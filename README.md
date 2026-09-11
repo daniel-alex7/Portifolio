@@ -1,48 +1,34 @@
-# Portfólio - Daniel Silva
+# Portfólio — Daniel Robson Alexandre Silva
 
-Bem-vindo ao repositório do meu portfólio pessoal. Este projeto foi desenvolvido para apresentar minha jornada como Desenvolvedor Back-end, minhas habilidades técnicas e meus projetos.
+Portfólio pessoal de página única, com identidade visual inspirada em terminal/editor de código — sem frameworks, sem ícones de biblioteca externa.
 
-## 🚀 Tecnologias Utilizadas
+## Tecnologias
 
-*   **HTML5 & CSS3**: Estrutura semântica e estilização moderna.
-*   **JavaScript (ES6+)**: Consumo da API do GitHub para carregar projetos dinamicamente.
-*   **Bootstrap 5**: Framework CSS para agilizar o layout responsivo e componentes visuais.
-*   **FontAwesome**: Ícones vetoriais.
+* **HTML5 & CSS3** — estrutura semântica, variáveis CSS para os temas claro/escuro.
+* **JavaScript (vanilla)** — sem dependências externas.
+* **Google Fonts** — Space Grotesk (títulos), IBM Plex Sans (texto) e IBM Plex Mono (elementos de terminal e dados).
 
-## 📂 Estrutura do Projeto
+## Estrutura do projeto
 
-*   **index.html**: Arquivo principal contendo a estrutura da página única (Single Page Application).
-    *   *Seção Início*: Apresentação e chamada para ação.
-    *   *Seção Visão*: Meus valores e propósito profissional.
-    *   *Seção Habilidades*: Lista de tecnologias (Java, Spring, AWS, etc.) com descrições.
-    *   *Seção Projetos*: Exibe um projeto em destaque e carrega automaticamente meus repositórios públicos do GitHub.
-    *   *Seção Contato*: Formulário simples para contato via e-mail.
-*   **style-new.css**: Folha de estilos personalizada (cores, animações, layout da jornada).
-*   **script.js**: Scripts auxiliares para interatividade.
+* **index.html** — página única com as seções:
+  * *Hero*: apresentação com uma janela de terminal animada (efeito de digitação).
+  * *Realizações*: destaques de projetos, consistência em código e formação.
+  * *Certificados*: listagem filtrável por categoria e pesquisável por nome/instituição, com estatísticas calculadas automaticamente (total de certificados e horas).
+* **style.css** — tokens de cor/tipografia e estilos dos componentes.
+* **script.js** — alternância de tema (persistida em `localStorage`), navegação com destaque de seção ativa, efeito de digitação do terminal, busca e filtro de certificados.
 
-## 🌐 Como Publicar no GitHub Pages
+## Como publicar no GitHub Pages
 
-Para tornar este portfólio acessível ao vivo na internet, siga os passos abaixo:
+1. Suba os arquivos (`index.html`, `style.css`, `script.js`) para um repositório no GitHub.
+2. Em **Settings > Pages**, em **Build and deployment > Source**, selecione `Deploy from a branch`.
+3. Selecione a branch `main` e a pasta `/ (root)`, depois **Save**.
+4. Aguarde alguns minutos — o link ficará em `https://daniel-alex7.github.io/<nome-do-repositorio>/`.
 
-1.  **Suba o código para o GitHub**:
-    *   Crie um novo repositório no GitHub (ex: `meu-portfolio`).
-    *   Faça o push dos arquivos (`index.html`, `style-new.css`, `script.js`, etc.) para este repositório.
+## Melhorias futuras
 
-2.  **Ative o GitHub Pages**:
-    *   No repositório do GitHub, vá em **Settings** (Configurações).
-    *   No menu lateral esquerdo, clique em **Pages**.
-    *   Em **Build and deployment** > **Source**, selecione `Deploy from a branch`.
-    *   Em **Branch**, selecione `main` (ou `master`) e a pasta `/ (root)`.
-    *   Clique em **Save**.
-
-3.  **Acesse**:
-    *   Aguarde alguns minutos. O GitHub fornecerá um link (ex: `https://seu-usuario.github.io/meu-portfolio/`).
-
-## 🛠 Melhorias Futuras
-
-*   Implementar um backend real para o formulário de contato (ex: Formspree ou API própria).
-*   Adicionar modo escuro/claro alternável.
-*   Criar páginas de detalhes para cada projeto.
+* Seção de projetos com integração à API do GitHub.
+* Formulário de contato com backend real (ex.: Formspree).
+* Página de detalhes por certificado/projeto.
 
 ---
-Desenvolvido por Daniel Silva.
+Desenvolvido por Daniel Robson Alexandre Silva.

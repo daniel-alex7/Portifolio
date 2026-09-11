@@ -1,231 +1,221 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Silva | Desenvolvedor Back-end</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- FontAwesome para ícones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <link rel="stylesheet" href="style-new.css" />
+<script>
+  // Aplica o tema salvo antes da primeira renderização, evitando flash de cor.
+  (function () {
+    try {
+      var stored = localStorage.getItem('theme');
+      var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    } catch (e) {}
+  })();
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfólio de Daniel Robson Alexandre Silva, estudante de Ciência da Computação em transição para tecnologia.">
+<title>Daniel Robson Alexandre Silva — Portfólio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="ambient-light"></div>
 
-    <!-- CABEÇALHO -->
-    <header class="main-header">
-        <div class="logo">Daniel Silva</div>
-        <nav>
-            <a href="#inicio">Início</a>
-            <a href="#visao">Visão</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#contato">Contato</a>
-        </nav>
-    </header>
+  <nav class="nav" id="site-nav">
+    <div class="container nav-inner">
+      <a href="#topo" class="brand">daniel<span class="brand-dot">.</span>dev</a>
+      <div class="nav-links">
+        <a href="#realizacoes" class="nav-link">Realizações</a>
+        <a href="#certificados" class="nav-link">Certificados</a>
+        <a href="https://github.com/daniel-alex7" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <button id="theme-toggle" class="btn-icon" type="button" aria-label="Alternar entre tema claro e escuro" aria-pressed="false">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <circle cx="12" cy="12" r="4.2"></circle>
+          <path d="M12 2.5v2.4M12 19.1v2.4M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.9 19.1l1.7-1.7M17.4 6.6l1.7-1.7"></path>
+        </svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
 
-    <main class="container py-4">
-        
-        <!-- SEÇÃO 1: HERO -->
-        <section id="inicio" class="hero-section text-center py-5">
-            <div class="hero-content">
-                <h1 class="fw-bold display-4 mb-3">Desenvolvedor Back-end</h1>
-                <p class="typing-effect text-secondary mx-auto mb-4" style="max-width: 600px;">
-                    Transformando dados e lógica em soluções escaláveis e eficientes.
-                </p>
-                <div class="hero-buttons d-flex justify-content-center gap-3">
-                    <a href="#projetos" class="btn btn-modern">Ver Projetos</a>
-                    <a href="https://github.com/daniel-alex7" target="_blank" class="btn btn-outline">GitHub</a>
-                </div>
-            </div>
-        </section>
+  <header class="hero" id="topo">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Estudante de Ciência da Computação</p>
+        <h1>Daniel Robson<br>Alexandre Silva</h1>
+        <p class="hero-lead">Hoje em operações financeiras, construindo projetos e certificações para migrar para desenvolvimento.</p>
+        <div class="hero-actions">
+          <a href="#certificados" class="btn btn-primary">Ver certificados</a>
+          <a href="https://github.com/daniel-alex7" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/danielr-alexandre" class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
 
-        <!-- SEÇÃO 2: VISÃO E VALORES -->
-        <section id="visao" class="section-container my-5">
-            <h2 class="section-title text-center mb-4">Minha Visão & Valores</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100 p-4 shadow-sm border-0">
-                        <h3 class="h5" style="color: var(--primary-color);"><i class="fas fa-bullseye me-2"></i>Propósito</h3>
-                        <p class="small text-secondary mb-0">
-                            Construir um futuro sólido através da tecnologia. O estudo é meu caminho para mudar realidades e criar impacto real.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 p-4 shadow-sm border-0">
-                        <h3 class="h5" style="color: var(--primary-color);"><i class="fas fa-shield-alt me-2"></i>Pilares</h3>
-                        <p class="small text-secondary mb-0">
-                            Fé, ética e responsabilidade são inegociáveis. Acredito que o crescimento real vem da constância e do esforço diário.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 p-4 shadow-sm border-0">
-                        <h3 class="h5" style="color: var(--primary-color);"><i class="fas fa-microchip me-2"></i>Foco</h3>
-                        <p class="small text-secondary mb-0">
-                            Especialização em Back-end, Cloud e Dados. Busco não apenas escrever código, mas entender o motor e a arquitetura dos sistemas.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <div class="terminal" aria-hidden="true">
+        <div class="terminal-bar">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+          <span class="terminal-title">daniel@portfolio — zsh</span>
+        </div>
+        <div class="terminal-body" id="terminal-body"></div>
+      </div>
+    </div>
+  </header>
 
-        <!-- SEÇÃO 3: HABILIDADES -->
-        <section id="habilidades" class="section-container my-5">
-            <h2 class="section-title text-center mb-4">Arsenal Técnico</h2>
-            <div class="row g-4">
-                <!-- Back-end -->
-                <div class="col-md-4">
-                    <div class="card h-100 p-4 shadow-sm border-0">
-                        <h3 class="h5"><i class="fas fa-server me-2"></i>Back-end & Cloud</h3>
-                        <p class="small text-secondary mb-3">APIs robustas, microsserviços e arquiteturas serverless com foco em performance.</p>
-                        <div class="skill-chips d-flex flex-wrap gap-2">
-                            <span class="skill-chip">Java</span>
-                            <span class="skill-chip">Spring Boot</span>
-                            <span class="skill-chip">Node.js</span>
-                            <span class="skill-chip">AWS Lambda</span>
-                            <span class="skill-chip">SQL (Postgres/MySQL)</span>
-                            <span class="skill-chip">Docker</span>
-                            <span class="skill-chip">API REST</span>
-                        </div>
-                    </div>
-                </div>
+  <section class="section container" id="realizacoes">
+    <h2>Principais realizações</h2>
+    <div class="achievements-grid">
+      <article class="card">
+        <span class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 16.5A4 4 0 0 1 7.7 8.6 5.5 5.5 0 0 1 18 9a3.6 3.6 0 0 1-.6 7.5H7Z"></path><path d="M12 12v6M9.5 15.5 12 18l2.5-2.5"></path></svg>
+        </span>
+        <h3>Projetos & cloud</h3>
+        <p>Criação de APIs serverless em GCP, aplicações desktop com OCR e automações com Python, Java e C#.</p>
+      </article>
+      <article class="card">
+        <span class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="6" cy="6" r="2.2"></circle><circle cx="6" cy="18" r="2.2"></circle><circle cx="18" cy="12" r="2.2"></circle><path d="M6 8.2V15.8M8.1 12H15.9"></path></svg>
+        </span>
+        <h3>Consistência em código</h3>
+        <p>Participação ativa em projetos acadêmicos e repositórios open-source no GitHub.</p>
+      </article>
+      <article class="card">
+        <span class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5.5c2.5-1 5-1 8 .5 3-1.5 5.5-1.5 8-.5v13c-2.5-1-5-1-8 .5-3-1.5-5.5-1.5-8-.5Z"></path><path d="M12 6v13"></path></svg>
+        </span>
+        <h3>Formação contínua</h3>
+        <p>Certificações práticas nas áreas de cibersegurança, big data, banco de dados e desenvolvimento.</p>
+      </article>
+    </div>
+  </section>
 
-                <!-- Dados -->
-                <div class="col-md-4">
-                    <div class="card h-100 p-4 shadow-sm border-0">
-                        <h3 class="h5"><i class="fas fa-chart-line me-2"></i>Dados & Observabilidade</h3>
-                        <p class="small text-secondary mb-3">Monitoramento em tempo real e transformação de dados em insights acionáveis.</p>
-                        <div class="skill-chips d-flex flex-wrap gap-2">
-                            <span class="skill-chip">Grafana</span>
-                            <span class="skill-chip">Prometheus</span>
-                            <span class="skill-chip">Dynatrace</span>
-                            <span class="skill-chip">Power BI</span>
-                            <span class="skill-chip">Excel Avançado</span>
-                        </div>
-                    </div>
-                </div>
+  <section class="section container" id="certificados">
+    <div class="cert-heading">
+      <h2>Certificados</h2>
+      <div class="cert-stats">
+        <div class="stat">
+          <span class="stat-value" id="stat-count">0</span>
+          <span class="stat-label">certificados</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" id="stat-hours">0</span>
+          <span class="stat-label">horas de formação</span>
+        </div>
+      </div>
+    </div>
 
-                <!-- Soft Skills -->
-                <div class="col-md-4">
-                    <div class="card h-100 p-4 shadow-sm border-0">
-                        <h3 class="h5"><i class="fas fa-brain me-2"></i>Soft Skills</h3>
-                        <p class="small text-secondary mb-3">Habilidades interpessoais essenciais para colaboração e entrega de valor.</p>
-                        <div class="skill-chips d-flex flex-wrap gap-2">
-                            <span class="skill-chip">Visão Sistêmica</span>
-                            <span class="skill-chip">Resiliência</span>
-                            <span class="skill-chip">Trabalho em Equipe</span>
-                            <span class="skill-chip">Aprendizado Contínuo</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <div class="cert-controls">
+      <label class="search-field">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m20 20-3.6-3.6"></path></svg>
+        <input type="search" id="cert-search" placeholder="Buscar por nome ou instituição" aria-label="Buscar certificados">
+      </label>
+      <div class="filter-buttons" role="group" aria-label="Filtrar por categoria">
+        <button class="filter-btn active" data-filter="all" type="button" aria-pressed="true">Todos</button>
+        <button class="filter-btn" data-filter="dados" type="button" aria-pressed="false">Banco de dados</button>
+        <button class="filter-btn" data-filter="seguranca" type="button" aria-pressed="false">Cibersegurança</button>
+        <button class="filter-btn" data-filter="dev" type="button" aria-pressed="false">Desenvolvimento</button>
+      </div>
+    </div>
 
-        <!-- SEÇÃO 4: PROJETOS -->
-        <section id="projetos" class="section-container my-5">
-            <h2 class="section-title text-center mb-2">Meus Projetos</h2>
-            <p class="text-center text-secondary mb-4">Repositórios públicos carregados diretamente do GitHub.</p>
-            
-            <!-- Projeto Destaque -->
-            <div class="card border-0 shadow-sm mb-4 featured-card p-2">
-                <div class="card-body">
-                    <h3 class="card-title h4"><i class="fas fa-star text-warning me-2"></i>Projeto Destaque: API de Gestão de Pedidos</h3>
-                    <p class="card-text text-secondary">
-                        Sistema completo de backend para e-commerce. Desenvolvido com <strong>Spring Boot 3</strong> e <strong>PostgreSQL</strong>. 
-                        Inclui autenticação JWT, documentação via Swagger/OpenAPI e cobertura de testes com JUnit. Arquitetura limpa e pronta para deploy via Docker.
-                    </p>
-                    <a href="https://github.com/daniel-alex7" target="_blank" class="btn btn-primary btn-sm">Ver Repositório Completo</a>
-                </div>
-            </div>
+    <p class="cert-results" id="cert-results" aria-live="polite"></p>
 
-            <!-- Projetos Dinâmicos do GitHub -->
-            <div class="row g-3" id="projects-container">
-                <p id="loading-text" class="text-center w-100 text-secondary">Carregando projetos...</p>
-            </div>
-        </section>
+    <div class="cert-grid" id="cert-grid">
+      <article class="cert-card" data-category="dados" data-hours="60">
+        <span class="cert-tag cert-tag-dados">Banco de dados</span>
+        <h3>Big Data & Analytics</h3>
+        <p class="cert-inst">FIAP (Nano Course)</p>
+        <div class="cert-foot">
+          <span class="cert-hours">60h</span>
+          <span class="cert-date">28/04/2026</span>
+        </div>
+      </article>
 
-        <!-- SEÇÃO 5: CONTATO -->
-        <section id="contato" class="section-container my-5">
-            <h2 class="section-title text-center mb-4">Vamos Conversar?</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-8 col-lg-6">
-                    <form class="contact-form p-4 card border-0 shadow-sm" action="mailto:daniel456alexandre@gmail.com" method="post" enctype="text/plain">
-                        <div class="mb-3">
-                            <label class="form-label">Nome</label>
-                            <input type="text" name="name" class="form-control" placeholder="Seu Nome" required>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Email</label>
-                            <input type="email" name="email" class="form-control" placeholder="seu@email.com" required>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Mensagem</label>
-                            <textarea name="message" class="form-control" rows="4" placeholder="Como posso ajudar?" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-modern w-100 fw-bold">Enviar Mensagem</button>
-                    </form>
-                </div>
-            </div>
-        </section>
+      <article class="cert-card" data-category="seguranca">
+        <span class="cert-tag cert-tag-seguranca">Cibersegurança</span>
+        <h3>Introduction to Cybersecurity</h3>
+        <p class="cert-inst">Cisco Networking Academy</p>
+        <div class="cert-foot">
+          <span class="cert-hours">Verified Student Level</span>
+          <span class="cert-date">25/03/2026</span>
+        </div>
+      </article>
 
-    </main>
+      <article class="cert-card" data-category="seguranca">
+        <span class="cert-tag cert-tag-seguranca">Cibersegurança</span>
+        <h3>Gerenciamento de Ameaças Cibernéticas</h3>
+        <p class="cert-inst">Cisco / UNICSUL</p>
+        <div class="cert-foot">
+          <span class="cert-date">20/09/2025</span>
+        </div>
+      </article>
 
-    <!-- JS Bootstrap & Script Customizado -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const username = 'daniel-alex7';
-            const container = document.getElementById('projects-container');
-            const loadingText = document.getElementById('loading-text');
+      <article class="cert-card" data-category="dev" data-hours="3">
+        <span class="cert-tag cert-tag-dev">Desenvolvimento</span>
+        <h3>Imersão Dev com Google Gemini (10ª Edição)</h3>
+        <p class="cert-inst">Alura em parceria com Google</p>
+        <div class="cert-foot">
+          <span class="cert-hours">3h</span>
+          <span class="cert-date">01/12/2025</span>
+        </div>
+      </article>
 
-            fetch(`https://api.github.com/users/${username}/repos?sort=updated`)
-                .then(response => response.json())
-                .then(repos => {
-                    loadingText.style.display = 'none';
-                    if (!Array.isArray(repos) || repos.length === 0) {
-                        container.innerHTML = '<p class="text-center text-secondary">Nenhum projeto público encontrado.</p>';
-                        return;
-                    }
+      <article class="cert-card" data-category="dados" data-hours="15">
+        <span class="cert-tag cert-tag-dados">Banco de dados</span>
+        <h3>Implementando Banco de Dados</h3>
+        <p class="cert-inst">Fundação Bradesco — Escola Virtual</p>
+        <div class="cert-foot">
+          <span class="cert-hours">15h</span>
+          <span class="cert-date">03/09/2022</span>
+        </div>
+      </article>
 
-                    const topRepos = repos.slice(0, 6);
+      <article class="cert-card" data-category="dev" data-hours="5">
+        <span class="cert-tag cert-tag-dev">Desenvolvimento</span>
+        <h3>Linguagem de Programação Java — Básico</h3>
+        <p class="cert-inst">Fundação Bradesco — Escola Virtual</p>
+        <div class="cert-foot">
+          <span class="cert-hours">5h</span>
+          <span class="cert-date">06/06/2023</span>
+        </div>
+      </article>
 
-                    topRepos.forEach(repo => {
-                        const lang = repo.language ? repo.language : 'Code';
-                        
-                        const col = document.createElement('div');
-                        col.className = 'col-md-6 col-lg-4';
-                        
-                        col.innerHTML = `
-                            <div class="card h-100 p-3 border-0 shadow-sm d-flex flex-column justify-content-between">
-                                <div>
-                                    <div class="d-flex justify-content-between align-items-center mb-2">
-                                        <h3 class="h6 m-0 fw-bold">${repo.name}</h3>
-                                        <span class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill">${lang}</span>
-                                    </div>
-                                    <p class="small text-secondary mb-3" style="min-height: 48px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
-                                        ${repo.description || 'Sem descrição.'}
-                                    </p>
-                                </div>
-                                <a href="${repo.html_url}" target="_blank" class="btn btn-outline-secondary btn-sm w-100 mt-2">Ver Código</a>
-                            </div>
-                        `;
-                        container.appendChild(col);
-                    });
-                })
-                .catch(err => {
-                    console.error(err);
-                    loadingText.innerText = 'Erro ao carregar projetos do GitHub.';
-                });
-        });
-    </script>
+      <article class="cert-card" data-category="dev" data-hours="15">
+        <span class="cert-tag cert-tag-dev">Desenvolvimento</span>
+        <h3>Projetos de Sistemas de TI</h3>
+        <p class="cert-inst">Fundação Bradesco — Escola Virtual</p>
+        <div class="cert-foot">
+          <span class="cert-hours">15h</span>
+          <span class="cert-date">31/03/2023</span>
+        </div>
+      </article>
+
+      <article class="cert-card" data-category="dev" data-hours="10">
+        <span class="cert-tag cert-tag-dev">Desenvolvimento</span>
+        <h3>Atendimento ao Público</h3>
+        <p class="cert-inst">Fundação Bradesco — Escola Virtual</p>
+        <div class="cert-foot">
+          <span class="cert-hours">10h</span>
+          <span class="cert-date">14/07/2023</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>Daniel Robson Alexandre Silva</span>
+      <div class="footer-links">
+        <a href="https://github.com/daniel-alex7" target="_blank" rel="noopener">github.com/daniel-alex7</a>
+        <a href="https://www.linkedin.com/in/danielr-alexandre" target="_blank" rel="noopener">linkedin.com/in/danielr-alexandre</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
