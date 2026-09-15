@@ -13,6 +13,7 @@ Portfólio pessoal de página única, com identidade visual inspirada em termina
 * **index.html** — página única com as seções:
   * *Hero*: apresentação com uma janela de terminal animada (efeito de digitação).
   * *Realizações*: destaques de projetos, consistência em código e formação.
+  * *Projetos*: cards com links para os repositórios no GitHub (e o site publicado do projeto Qahal).
   * *Certificados*: listagem filtrável por categoria e pesquisável por nome/instituição, com estatísticas calculadas automaticamente (total de certificados e horas).
 * **style.css** — tokens de cor/tipografia e estilos dos componentes.
 * **script.js** — alternância de tema (persistida em `localStorage`), navegação com destaque de seção ativa, efeito de digitação do terminal, busca e filtro de certificados.
@@ -26,7 +27,6 @@ Portfólio pessoal de página única, com identidade visual inspirada em termina
 
 ## Melhorias futuras
 
-* Seção de projetos com integração à API do GitHub.
 * Formulário de contato com backend real (ex.: Formspree).
 * Página de detalhes por certificado/projeto.
 

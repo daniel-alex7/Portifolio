@@ -273,6 +273,51 @@ html[data-theme="dark"] .btn-icon .icon-moon { display: block; }
 
 .card p { margin: 0; font-size: .92rem; }
 
+/* ---------- Projects ---------- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.project-card {
+  background-color: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-tag {
+  font-family: var(--font-mono);
+  font-size: .72rem;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.project-card h3 { font-size: 1rem; margin-bottom: 6px; }
+
+.project-card p { font-size: .9rem; margin: 0 0 16px; flex-grow: 1; }
+
+.project-links {
+  display: flex;
+  gap: 16px;
+  font-family: var(--font-mono);
+  font-size: .8rem;
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: var(--text-dim);
+  transition: color 0.15s ease;
+}
+
+.project-links a:hover { color: var(--accent); }
+
 /* ---------- Certificates ---------- */
 .cert-heading {
   display: flex;
