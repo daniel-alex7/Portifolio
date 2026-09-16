@@ -96,6 +96,50 @@ document.addEventListener('DOMContentLoaded', () => {
     typeTerminal();
   }
 
+  /* ---------- Projetos: dados ao vivo do GitHub ---------- */
+  function relativeTime(dateString) {
+    const diffMs = Date.now() - new Date(dateString).getTime();
+    const days = Math.floor(diffMs / 86400000);
+    if (days < 1) return 'atualizado hoje';
+    if (days < 30) return `atualizado há ${days} dia${days > 1 ? 's' : ''}`;
+    const months = Math.floor(days / 30);
+    if (months < 12) return `atualizado há ${months} mês${months > 1 ? 'es' : ''}`;
+    const years = Math.floor(months / 12);
+    return `atualizado há ${years} ano${years > 1 ? 's' : ''}`;
+  }
+
+  document.querySelectorAll('.project-card[data-repo]').forEach(async (card) => {
+    const repo = card.getAttribute('data-repo');
+    const statsEl = card.querySelector('.project-stats');
+    if (!statsEl) return;
+    try {
+      const res = await fetch(`https://api.github.com/repos/daniel-alex7/${repo}`);
+      if (!res.ok) return;
+      const data = await res.json();
+
+      if (data.language) {
+        const chip = document.createElement('span');
+        chip.className = 'stat-chip';
+        chip.textContent = data.language;
+        statsEl.appendChild(chip);
+      }
+      if (data.stargazers_count > 0) {
+        const chip = document.createElement('span');
+        chip.className = 'stat-chip';
+        chip.textContent = `★ ${data.stargazers_count}`;
+        statsEl.appendChild(chip);
+      }
+      if (data.pushed_at) {
+        const chip = document.createElement('span');
+        chip.className = 'stat-chip';
+        chip.textContent = relativeTime(data.pushed_at);
+        statsEl.appendChild(chip);
+      }
+    } catch (e) {
+      /* API indisponível ou limite de requisições atingido: card continua funcional sem os chips */
+    }
+  });
+
   /* ---------- Certificados: busca + filtro + estatísticas ---------- */
   const certCards = Array.from(document.querySelectorAll('.cert-card'));
   const filterButtons = document.querySelectorAll('.filter-btn');
