@@ -143,6 +143,39 @@ html[data-theme="dark"] .btn-icon .icon-moon { display: block; }
   align-items: center;
 }
 
+/* ---------- Avatar ---------- */
+.avatar {
+  position: relative;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 2px solid var(--border);
+  background-color: var(--accent-soft);
+}
+
+.avatar img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar-fallback {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: var(--accent);
+}
+
 .eyebrow {
   font-family: var(--font-mono);
   font-size: .85rem;
@@ -244,6 +277,51 @@ html[data-theme="dark"] .btn-icon .icon-moon { display: block; }
 /* ---------- Sections ---------- */
 .section { padding: 56px 0; }
 
+/* ---------- Trajetória ---------- */
+.timeline {
+  list-style: none;
+  margin: 28px 0 0;
+  padding: 0 0 0 0;
+  border-left: 2px solid var(--border);
+}
+
+.timeline-item {
+  position: relative;
+  padding: 0 0 28px 28px;
+}
+
+.timeline-item:last-child { padding-bottom: 0; }
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: 3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--bg-panel);
+  border: 2px solid var(--accent);
+}
+
+.timeline-item.is-current::before { background-color: var(--accent); }
+
+.timeline-year {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: .75rem;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+
+.timeline-year:empty { display: none; }
+
+.timeline-item h3 { font-size: 1rem; margin: 0 0 4px; }
+.timeline-item p { font-size: .9rem; margin: 0; }
+.timeline-item p a { color: var(--accent); text-decoration: none; }
+.timeline-item p a:hover { text-decoration: underline; }
+
+/* ---------- Achievements ---------- */
 .achievements-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -315,6 +393,35 @@ html[data-theme="dark"] .btn-icon .icon-moon { display: block; }
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+
+.project-thumb {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: var(--accent-soft);
+  margin-bottom: 14px;
+}
+
+.project-thumb img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumb-fallback {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  opacity: .55;
 }
 
 .project-card-top {

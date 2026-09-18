@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     nav.classList.toggle('is-scrolled', window.scrollY > 8);
   }, { passive: true });
 
-  const sections = ['realizacoes', 'projetos', 'certificados']
+  const sections = ['trajetoria', 'realizacoes', 'projetos', 'certificados']
     .map(id => document.getElementById(id))
     .filter(Boolean);
   const navLinks = Array.from(document.querySelectorAll('.nav-link[href^="#"]'));
