@@ -351,6 +351,53 @@ html[data-theme="dark"] .btn-icon .icon-moon { display: block; }
 
 .card p { margin: 0; font-size: .92rem; }
 
+/* ---------- Tecnologias ---------- */
+.skills-subtitle {
+  font-family: var(--font-mono);
+  font-size: .8rem;
+  font-weight: 500;
+  color: var(--text-dim);
+  text-transform: none;
+  margin: 24px 0 12px;
+}
+
+.skills-subtitle:first-of-type { margin-top: 20px; }
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-chip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--border);
+  background-color: var(--bg-panel);
+  border-radius: 999px;
+  padding: 7px 16px 7px 7px;
+  font-size: .88rem;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.skill-chip:hover { border-color: var(--accent); transform: translateY(-2px); }
+
+.skill-chip-text { padding: 7px 16px; }
+
+.skill-icon-wrap {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 7px;
+  background-color: #ffffff;
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.skill-icon-wrap img { width: 17px; height: 17px; }
+
 /* ---------- Projects ---------- */
 .section-lead {
   margin: -8px 0 0;

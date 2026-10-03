@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     nav.classList.toggle('is-scrolled', window.scrollY > 8);
   }, { passive: true });
 
-  const sections = ['trajetoria', 'realizacoes', 'projetos', 'certificados']
+  const sections = ['trajetoria', 'realizacoes', 'tecnologias', 'projetos', 'certificados']
     .map(id => document.getElementById(id))
     .filter(Boolean);
   const navLinks = Array.from(document.querySelectorAll('.nav-link[href^="#"]'));
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { type: 'output', text: 'Daniel Robson Alexandre Silva' },
     { type: 'prompt', text: '$ cat sobre.txt' },
     { type: 'output', text: 'Estudante de Ciência da Computação (UNICSUL)' },
-    { type: 'output', text: 'Hoje em operações financeiras, migrando para tecnologia' },
+    { type: 'output', text: 'Estagiário de tecnologia na TechFin, vindo de operações financeiras' },
     { type: 'prompt', text: '$ ls contato/' },
     { type: 'output', text: 'github.com/daniel-alex7  linkedin.com/in/danielr-alexandre' }
   ];
