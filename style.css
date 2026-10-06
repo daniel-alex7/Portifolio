@@ -1,13 +1,13 @@
 /* ---------- Tokens ---------- */
 :root {
-  --bg: #eef0f3;
-  --bg-panel: #ffffff;
-  --bg-terminal: #14171d;
-  --border: #d6dae0;
-  --text: #1b1f27;
-  --text-dim: #5b6270;
-  --accent: #b3730f;
-  --accent-soft: rgba(179, 115, 15, 0.12);
+  --bg: #ffffff;
+  --bg-panel: #ececeb;
+  --bg-terminal: #0e1016;
+  --border: #bea141;
+  --text: #232b3f;
+  --text-dim: #b99551;
+  --accent: #b49460;
+  --accent-soft: rgba(184, 132, 49, 0.12);
   --cat-dev: #b3730f;
   --cat-dados: #2f8a7d;
   --cat-seguranca: #b8474f;
