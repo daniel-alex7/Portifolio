@@ -1,12 +1,12 @@
 /* ---------- Tokens ---------- */
 :root {
   --bg: #ffffff;
-  --bg-panel: #ececeb;
+  --bg-panel: #fffffd;
   --bg-terminal: #0e1016;
   --border: #bea141;
   --text: #232b3f;
-  --text-dim: #b99551;
-  --accent: #b49460;
+  --text-dim: #d49218;
+  --accent: #e8a33d;
   --accent-soft: rgba(184, 132, 49, 0.12);
   --cat-dev: #b3730f;
   --cat-dados: #2f8a7d;
